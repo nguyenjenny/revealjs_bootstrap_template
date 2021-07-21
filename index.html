@@ -19,37 +19,18 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<div class="container">
-						<h1>Presentation Title</h1>
-						<h4>Subtitle</h4>
-
-						<div class="p-1 mb-2 bg-light rounded-3">
-							<div class="container py-5">
-								<p>Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-								<button class="btn btn-primary btn-lg" type="button">Example button</button>
-							</div>
-						</div>
-					
-
-						<div class="row g-2">
-							<div class="col-md-6">
-								<div class=" p-1 text-white bg-dark rounded-3">
-								<h3>Change the background</h3>
-								<p>Swap the background-color utility and add a</p>
-								<button class="btn" type="button">Example button</button>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="p-1 bg-light border rounded text-white">
-									<h3>Change the background</h3>
-									<p>Or, keep it light and add a border for some added definition to the</p>
-								<button class="btn btn-outline-secondary" type="button">Example button</button>
-								</div>
-							</div>	
+				<section data-background-image="/assets/images/jennyn_theme/geometric_orange_bg-01.svg">
+					<div class="container-lg-12">
+						<div class="mb-4 rounded-3 p-5 text-white" style="background-color: #D48C85;">
+							<img class="image-flex" src="/assets/images/jennyn_theme/jenny_cartoon-01.svg" height=300>
+							<h1 class="text-white">Presentation Title</h1>
+							<h4 class="text-white">Subtitle</h4>
+							<p>Description goes here.</p>
+							<a href="http://www.jennyn.ca" class="btn btn-primary btn-lg m-2 text-white" type="button">Contact Me Here</a>
 						</div>
 					</div>
 				</section>
+
 				<section>Slide 2</section>
 			</div>
 		</div>
@@ -64,6 +45,8 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				width: 1200,
+  				height: 700,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
