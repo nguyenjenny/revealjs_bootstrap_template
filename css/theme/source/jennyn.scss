@@ -23,10 +23,10 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;50
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
-$mainColor: $secondary;
-$headingColor: $secondary;
+$mainColor: #000;
+$headingColor: #000;
 
-$mainFontSize: 18px;
+$mainFontSize: 24px;
 $blockMargin: 10px;
 
 
@@ -35,15 +35,15 @@ $headingFont: $headings-font-family, Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
-$headingFontWeight: 100;
+$headingFontWeight: 200;
 $linkColor: $primary;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 1.8em;
-$heading2Size: 1.6em;
-$heading3Size: 1.5em;
-$heading4Size: 1.1em;
+$heading1Size: 2em;
+$heading2Size: 1.8em;
+$heading3Size: 1.6em;
+$heading4Size: 1.4em;
 
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
