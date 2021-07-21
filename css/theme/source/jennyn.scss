@@ -34,7 +34,7 @@ $mainFont: $headings-font-family, Helvetica, sans-serif;
 $headingFont: $headings-font-family, Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: none;
 $headingFontWeight: 200;
 $linkColor: $primary;
 $linkColorHover: lighten( $linkColor, 15% );
