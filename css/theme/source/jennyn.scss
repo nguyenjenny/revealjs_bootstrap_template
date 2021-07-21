@@ -27,7 +27,7 @@ $mainColor: $secondary;
 $headingColor: $secondary;
 
 $mainFontSize: 10px;
-$blockMargin: 10px;
+$blockMargin: 16px;
 
 
 $mainFont: $headings-font-family, Helvetica, sans-serif;
@@ -40,8 +40,8 @@ $linkColor: $primary;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 1.4em;
-$heading2Size: 1.2em;
+$heading1Size: 1.8em;
+$heading2Size: 1.6em;
 $heading3Size: 1.5em;
 $heading4Size: 1.1em;
 
