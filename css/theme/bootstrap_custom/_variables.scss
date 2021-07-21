@@ -33,7 +33,7 @@ $dark_blue:#294F7C !default;
 $tan:     #EDE6D4 !default;
 
 $primary:       $red !default;
-$secondary:     $dark_blue !default;
+$secondary:     #294F7C !default;
 $success:       $green !default;
 $info:          $pink !default;
 $warning:       $yellow !default;
@@ -106,3 +106,8 @@ $breadcrumb-bg:                     $primary !default;
 $breadcrumb-divider-color:          $white !default;
 $breadcrumb-active-color:           $breadcrumb-divider-color !default;
 $breadcrumb-border-radius:          .25rem !default;
+
+// Heading Size
+
+$h1-font-size: 2rem;
+$h2-font-size: 2rem;
