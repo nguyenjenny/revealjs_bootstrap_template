@@ -15,7 +15,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-main-font: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Helvetica, sans-serif;
   --r-main-font-size: 10px;
   --r-main-color: #294F7C;
-  --r-block-margin: 10px;
+  --r-block-margin: 16px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Helvetica, sans-serif;
   --r-heading-color: #294F7C;
@@ -25,8 +25,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   --r-heading-text-shadow: none;
   --r-heading-font-weight: 100;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 1.4em;
-  --r-heading2-size: 1.2em;
+  --r-heading1-size: 1.8em;
+  --r-heading2-size: 1.6em;
   --r-heading3-size: 1.5em;
   --r-heading4-size: 1.1em;
   --r-code-font: monospace;
