@@ -20,9 +20,9 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;50
   @import url($web-font-path);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Ubuntu:wght@700&display=swap');
 
-$heading_font: "Roboto Condensed";
+$heading_font: "Ubuntu";
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -35,7 +35,7 @@ $blockMargin: 10px;
 
 
 $mainFont: Helvetica, sans-serif;
-$headingFont: $heading_font, Helvetica, sans-serif;
+$headingFont: $headings-font-family, Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
@@ -49,6 +49,7 @@ $heading2Size: 1.8em;
 $heading3Size: 1.6em;
 $heading4Size: 1.4em;
 
+
 // Change text colors against dark slide backgrounds
 @include dark-bg-text-color(#fff);
 
@@ -56,3 +57,8 @@ $heading4Size: 1.4em;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+
+.reveal h1 {
+  font-family: $heading_font, Helvetica, sans-serif;
+}
