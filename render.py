@@ -31,9 +31,9 @@ logos = [i.replace("\\", "/") for i in logos]
 
 home_vars = {
     "logos": logos,
-    "jenny_avatar": "/assets/images/jennyn_theme/jenny_cartoon-01.svg",
-    "mugsy_avatar": "/assets/images/jennyn_theme/mugsy_icon-01.svg",
-    "home_bg": "/assets/images/jennyn_theme/geometric_orange_bg-01.svg",
+    "jenny_avatar": "/assets/images/jennyn_theme/jenny_icon.svg",
+    "mugsy_avatar": "/assets/images/jennyn_theme/mugsy_icon.svg",
+    "home_bg": "/assets/images/jennyn_theme/geometric_orange_bg.svg",
 }
 
 
