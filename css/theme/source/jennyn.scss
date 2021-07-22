@@ -60,5 +60,14 @@ $heading4Size: 1.4em;
 
 
 .reveal h1 {
-  font-family: $heading_font, Helvetica, sans-serif;
+  font-family: $heading_font, Helvetica, sans-serif !important; 
+}
+
+.reveal h1,  .reveal h2,  .reveal h3,  .reveal h4, .reveal h5, .reveal h6  {
+  margin: 0 !important;
+}
+
+.reveal img {
+  max-width: 100% !important;
+  max-height: 100% !important;
 }
