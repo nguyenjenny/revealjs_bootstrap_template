@@ -20,6 +20,10 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;50
   @import url($web-font-path);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+$heading_font: Roboto Condensed
+
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 
@@ -30,8 +34,8 @@ $mainFontSize: 24px;
 $blockMargin: 10px;
 
 
-$mainFont: $headings-font-family, Helvetica, sans-serif;
-$headingFont: $headings-font-family, Helvetica, sans-serif;
+$mainFont: Helvetica, sans-serif;
+$headingFont: $heading_font, Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
