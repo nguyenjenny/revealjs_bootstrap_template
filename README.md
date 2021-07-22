@@ -17,7 +17,9 @@ View the live demo of the website [here](https://nguyenjenny.github.io/revealjs_
 - To build the theme run `gulp build`
 - The CSS files are located  in `dist>theme`
 
-## Adding Pages using Jinja2
+## Using Jinja2 
+
+### Adding Pages using Jinja2
 - To add pages use the `{% insert 'page_path.html' %}` to the `base.html`
 
 ```
@@ -45,4 +47,33 @@ View the live demo of the website [here](https://nguyenjenny.github.io/revealjs_
 			</div>
 		</div>
 ```
+### Updating variables
+You can update variables in the `base.py` page
+
+```
+        general_vars = {
+            "presentation_date": "2021-07-21",
+            "presentation_title": "Title Here",
+            "contact_url": "http://jennyn.ca",
+            "contact_text": "Contact Me",
+            "presentation_width": 1300,
+            "presentation_height": 700,
+            "email": "xxx@gmail.com",
+        }
+
+        color_vars = {
+            "blue": "#5073B3",
+            "aqua_blue": "#015D8E",
+            "mustard": "#E58D05",
+            "pink": "#EB9B94",
+            "red": "#FC3E00",
+            "tan": "#EDE6D4",
+            "peach": "#E5CEAE",
+            "box_color": "#294F7C",
+            "purple": "#563D7C",
+        }
+```
+
+
+### Building the `index.html` page
 - To build the `index.html` page run `python render.py` in the terminal

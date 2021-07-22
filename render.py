@@ -9,7 +9,7 @@ general_vars = {
     "presentation_date": "2021-07-21",
     "presentation_title": "Title Here",
     "contact_url": "http://jennyn.ca",
-    "contact_text": "Jenny Nguyen",
+    "contact_text": "Contact Me",
     "presentation_width": 1300,
     "presentation_height": 700,
     "email": "xxx@gmail.com",
