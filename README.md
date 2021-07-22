@@ -1,7 +1,7 @@
 # Template of reveal.js with Bootstrap 5 and Jinja2 integration
 
 ## Live Demo
-View the live demo of the website [here](https://nguyenjenny.github.io/revealjs_bootstrap_template/).
+View the live demo of the slides [here](https://nguyenjenny.github.io/revealjs_bootstrap_template/).
 
 ## Requirements
 - install [reveal.js](https://revealjs.com/)
