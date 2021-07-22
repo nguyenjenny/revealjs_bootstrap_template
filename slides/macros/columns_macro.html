@@ -41,7 +41,7 @@
 
 {% macro get_cards(cards, width, color) %}
     <div class="container mx-auto mt-3">
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center gy-4">
             {% for card in cards %}
                 <div class="col-{{width}}">
                     {{ get_card(card) }}
