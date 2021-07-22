@@ -1,0 +1,22 @@
+{% from 'macros/columns_macro.html' import get_cards %}
+
+{% set cards = 
+    [ 'Title', 'assets/images/jennyn_theme/card.png', 'Text for the card goes here'],
+    [ 'Title', 'assets/images/jennyn_theme/card_2.png', 'Text for the card goes here'],
+    [ 'Title', 'assets/images/jennyn_theme/card.png', 'Text for the card goes here'],
+
+%}
+
+<section data-background-color="{{peach}}">
+    <div class='container'>
+        <h1>Title</h1>
+    </div>
+    {{ get_cards(cards, 4) }} 
+    {# <div class="card" style="width: 18rem;">
+    <img src="assets/images/jennyn_theme/card.png" class="card-img-top" alt="'assets/images/jennyn_theme/card.png'">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div> #}
+</section>

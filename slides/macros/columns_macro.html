@@ -1,36 +1,52 @@
 {% macro get_cols_bg(col_list, width, color) %}
-<div class="row g-4">
-    {% for col in col_list %}
-    <div class="col-4">
-        <div class ="container p-3 rounded-3"  style="background-color: {{color}}">
-            <h4>{{ col[0] }}</h4>
-            <p>{{ col[1] }}</p>
+    <div class="row g-4 justify-content-md-center">
+        {% for col in col_list %}
+        <div class="col-{{width}}">
+            <div class ="container p-3 rounded-3"  style="background-color: {{color}}">
+                <h4>{{ col[0] }}</h4>
+                <p>{{ col[1] }}</p>
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 {% endmacro %}
 
-{% macro get_cols(col_list, width, color) %}
-<div class="row g-4">
-    {% for col in col_list %}
-    <div class="col-4">
-        <div class ="container p-3">
-            <h4>{{ col[0] }}</h4>
-            <p>{{ col[1] }}</p>
+{% macro get_cols(col_list, width) %}
+    <div class="row g-4 justify-content-md-center">
+        {% for col in col_list %}
+        <div class="col-{{width}}">
+            <div class ="container p-3">
+                <h4>{{ col[0] }}</h4>
+                <p>{{ col[1] }}</p>
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 {% endmacro %}
 
-{% macro get_card(card_title, card_image, card_content) %}
-<div class="card" style="width: 18rem;">
-  <img src="{{ card_image }}" class="card-img-top" alt="card image">
-  <div class="card-body">
-    <h3 class="card-title">{{ card_title }}</h5>
-    <p class="card-text">{{ card_content }}</p>
-  </div>
-</div>
 
+{% macro get_card(card) %}
+    {% set card_title = card[0] %}
+    {% set card_image = card[1] %}
+    {% set card_content = card[2] %}
+    <div class="card text-dark">
+        <img src="{{ card_image }}" class="card-img-top" alt="card image" height=180, style='max-width: 100%; max-height: 100%; margin: 0;'>
+        <div class="card-body">
+            <h4 class="card-title text-dark">{{ card_title }}</h5>
+            <p class="card-text text-dark">{{ card_content }}</p>
+        </div>
+    </div>
+
+{% endmacro %}
+
+{% macro get_cards(cards, width, color) %}
+    <div class="container mx-auto mt-3">
+        <div class="row justify-content-md-center">
+            {% for card in cards %}
+                <div class="col-{{width}}">
+                    {{ get_card(card) }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endmacro %}
