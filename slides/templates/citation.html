@@ -1,0 +1,13 @@
+{% from 'macros/citation_macro.html' import get_citations %}
+
+{% set citations = [
+    "Garfinkel, S. N., Tiley, C., O'Keeffe, S., Harrison, N. A., Seth, A. K., & Critchley, H. D. (2016). Discrepancies between dimensions of interoception in autism: Implications for emotion and anxiety. Biological Psychology, 114, 117–126. https://doi.org/10.1016/j.biopsycho.2015.12.003",
+    "Gosch, E. A., Flannery-Schroeder, E., Mauro, C. F., & Compton, S. N. (2006). Principles of Cognitive-Behavioral Therapy for Anxiety Disorders in Children. Journal of Cognitive Psychotherapy, 20(3), 247–262. https://doi.org/10.1891/jcop.20.3.247",
+    "Helverschou, S. B., & Martinsen, H. (2011). Anxiety in people diagnosed with autism and intellectual disability: Recognition and phenomenology. Research in Autism Spectrum Disorders, 5(1), 377–387. https://doi.org/10.1016/j.rasd.2010.05.003",
+
+]
+%}
+<section data-background-color="{{tan}}">
+{{get_citations(citations, "citations_example")}}
+
+</section>

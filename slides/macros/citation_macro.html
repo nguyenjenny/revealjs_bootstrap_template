@@ -1,0 +1,24 @@
+{% macro get_citations(items, citation_group_name) %}
+<div class='container'>
+    <p style="font-size: 0.78rem">
+        Citations:
+        {% for item in items%}
+        {% set ref_id = citation_group_name ~ '_' ~ loop.index %}
+        <sup id="fnref:{{ ref_id }}">
+            <a href="#fn:{{ ref_id }}">1</a>
+        </sup>
+        {% endfor %}
+    </p>
+</div>
+
+<div class="footnotes">
+  <ol>
+    {% for item in items%}
+    {% set ref_id = citation_group_name ~ '_' ~ loop.index %}
+    <li class="footnote" id="fn:{{ ref_id }}">
+      <p style="font-size: 0.70rem">{{ item }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
+{% endmacro %}
