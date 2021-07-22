@@ -2,7 +2,7 @@ import glob
 
 import jinja2
 
-jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader("template"))
+jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader("slides"))
 template = jinja_env.get_template("base.html")
 
 general_vars = {
