@@ -76,4 +76,4 @@ You can update variables in the `base.py` page
 
 
 ### Building the `index.html` page
-- To build the `index.html` page run `python render.py` in the terminal
+- To build the `index.html` page, run `python render.py` in the terminal
