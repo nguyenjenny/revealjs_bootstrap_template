@@ -20,32 +20,32 @@ View the live demo of the website [here](https://nguyenjenny.github.io/revealjs_
 ## Using Jinja2 
 
 ### Adding Pages using Jinja2
-- To add pages use the `{% insert 'page_path.html' %}` to the `base.html`
+- To add pages use the `{% include 'page_path.html' %}` to the `base.html`
 
 ```
-		<div class="reveal">
-			<div class="slides">
-				{% include 'title_cards/home.html' %}
-				<section>
-					{% include 'title_cards/template.html' %}
-					{% include 'templates/list_groups.html' %}
-					{% include 'templates/three_col.html' %}
-					{% include 'templates/three_col_bg.html' %}
-					{% include 'templates/left_photo.html' %}
-					{% include 'templates/right_photo.html' %}
-				</section>
-				<section>
-					{% include 'title_cards/intro.html' %}
-				</section>
-				<section>
-					{% include 'title_cards/results.html' %}
-				</section>
-				<section>
-					{% include 'title_cards/conclusion.html' %}
-				</section>
-				{% include 'title_cards/end.html' %}
-			</div>
-		</div>
+        <div class="reveal">
+            <div class="slides">
+                {% include 'title_cards/home.html' %}
+                <section>
+                    {% include 'title_cards/template.html' %}
+                    {% include 'templates/list_groups.html' %}
+                    {% include 'templates/three_col.html' %}
+                    {% include 'templates/three_col_bg.html' %}
+                    {% include 'templates/left_photo.html' %}
+                    {% include 'templates/right_photo.html' %}
+                </section>
+                <section>
+                    {% include 'title_cards/intro.html' %}
+                </section>
+                <section>
+                    {% include 'title_cards/results.html' %}
+                </section>
+                <section>
+                    {% include 'title_cards/conclusion.html' %}
+                </section>
+                {% include 'title_cards/end.html' %}
+            </div>
+        </div>
 ```
 ### Updating variables
 You can update variables in the `base.py` page
