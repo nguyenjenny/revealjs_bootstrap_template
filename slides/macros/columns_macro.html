@@ -50,3 +50,28 @@
         </div>
     </div>
 {% endmacro %}
+
+
+{% macro get_accordion (items, id_name) %}
+<div class="accordion" id="{{ id_name }}">
+    {% for item in items %}
+        {% set accordion_title = item[0] %}
+        {% set accordion_content = item[1] %}
+        {% set accordion_id = id_name ~ '_' ~ loop.index %}
+        {% set heading_accordion_id = 'heading_' ~ id_name ~ '_' ~ loop.index %}
+    <div class="accordion-item">
+        <h2 class="accordion-header reveal" id="{{ heading_accordion_id }}">
+            <button class="accordion-button button-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="true" aria-controls="{{ accordion_id }}">
+                <h2 class="text-dark">{{ accordion_title }}</h2>
+            </button>
+        </h2>
+        <div id="{{ accordion_id }}" class="accordion-collapse collapse" aria-labelledby="{{ heading_accordion_id  }}" data-bs-parent="#{{ id_name }}">
+            <div class="accordion-body text-dark" style="font-size: .78em">
+                <p>{{ accordion_content }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endmacro %}
