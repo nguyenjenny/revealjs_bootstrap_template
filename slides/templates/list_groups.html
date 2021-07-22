@@ -1,14 +1,19 @@
+{% from 'macros/list_macro.html' import get_list_group %}
+
 <section data-background-color="{{blue}}">
     <div class="container">
         <h1>Title</h1>
-        <div class="container pt-4">
-            <ul class="list-group">
-                <li class="list-group-item">Things to do in a long list of things</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
-            </ul>
-        </div>
+
+        {% set items = [
+            'Items of here in this section',
+            'Items of here in this section',
+            'Items of here in this section',
+            'Items of here in this section',
+            'Items of here in this section',
+            'Items of here in this section',
+        ]    
+        %}
+
+        {{ get_list_group(items) }}
     </div>
 </section>

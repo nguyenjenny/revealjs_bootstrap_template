@@ -1,0 +1,25 @@
+{% macro get_list_group(items) %}
+    <div class="container pt-4">
+        <ul class="list-group">
+            {% for item in items %}
+                <li class="list-group-item">{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endmacro %}
+
+{% macro get_ul(items) %}
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro get_ol(items) %}
+    <ol>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ol>
+{% endmacro %}

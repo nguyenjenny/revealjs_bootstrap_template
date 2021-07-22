@@ -1,0 +1,18 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from "macros/columns_macro.html" import get_cols_bg %}
+
+<section data-background-color="{{purple}}">
+    <h1>Title</h2>
+    {% set list_1 = [
+        'item go here',
+        'item go here',
+        'item go here',
+        'item go here',
+    
+    ] %}
+    {{ get_ol(list_1) }} 
+    {{ get_ul(list_1) }} 
+    <p>Text goes here and here </p>
+
+
+</section>

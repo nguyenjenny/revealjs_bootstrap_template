@@ -1,0 +1,12 @@
+{% macro get_title_card(title, fa_icon, bg, box_bg_color) %}
+
+<section data-background-image="{{bg}}">
+    <div class="container w-75">
+        <div class="my-4 rounded-3 p-5 text-white" style="background-color: {{box_bg_color}}">
+            <i class="fa fa-{{fa_icon}} display-1 fa-5x pb-3" aria-hidden="true"></i>
+            <h1 class="text-white">{{title}}</h1>
+        </div>
+    </div>
+</section>
+
+{% endmacro %}
