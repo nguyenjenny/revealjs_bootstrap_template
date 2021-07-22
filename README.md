@@ -20,7 +20,7 @@ View the live demo of the slides [here](https://nguyenjenny.github.io/revealjs_b
 ## Using Jinja2 
 
 ### Adding Pages using Jinja2
-- To add pages use the `{% include 'page_path.html' %}` to the `base.html`
+- To add pages add the command `{% include 'page_path.html' %}` to the `base.html`
 
 ```
         <div class="reveal">
