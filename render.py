@@ -10,6 +10,9 @@ general_vars = {
     "presentation_title": 'Title Here',
     "contact_url": "http://jennyn.ca",
     "contact_text": "Jenny Nguyen",
+    "presentation_width": 1300,
+    "presentation_height": 700,
+    "email": "xxx@gmail.com"
 }
 
 color_vars = {
@@ -20,7 +23,7 @@ color_vars = {
     'red': '#FC3E00',
     'tan': '#EDE6D4',
     'peach': '#E5CEAE',
-    "box_color": "#3D66B3",
+    "box_color": "#00537F",
 }
 
 logos = glob.glob(r"assets/images/logos/logo_*.png")
@@ -28,6 +31,8 @@ logos = [i.replace("\\", "/") for i in logos]
 
 home_vars = {
     "logos": logos,
+    "jenny_avatar": "/assets/images/jennyn_theme/jenny_cartoon-01.svg",
+    "mugsy_avatar": "/assets/images/jennyn_theme/mugsy_icon-01.svg",
     "home_bg": "/assets/images/jennyn_theme/geometric_orange_bg-01.svg",
 }
 

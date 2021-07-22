@@ -23,6 +23,16 @@
 		<div class="reveal">
 			<div class="slides">
 				{% include 'title_cards/home.html' %}
+				<section>
+					{% include 'title_cards/intro.html' %}
+				</section>
+				<section>
+					{% include 'title_cards/results.html' %}
+				</section>
+				<section>
+					{% include 'title_cards/conclusion.html' %}
+				</section>
+				{% include 'title_cards/end.html' %}
 			</div>
 			<section>
 
@@ -39,8 +49,8 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-				width: 1300,
-  				height: 700,
+				width: {{presentation_width}},
+  				height: {{presentation_height}},
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
