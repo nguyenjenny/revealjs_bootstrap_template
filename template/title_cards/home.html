@@ -1,0 +1,23 @@
+<section data-background-image="{{home_bg}}">
+    <div class="container-lg-12">
+        <div class="my-4 rounded-3 p-5 text-white" style="background-color: {{box_color}}">
+            <img class="image-flex" src="/assets/images/jennyn_theme/jenny_cartoon-01.svg" height=200>
+            <h1 class="text-white">{{ presentation_title }}</h1>
+            <h4 class="text-white">Subtitle</h4>
+            <p>Description goes here.</p>
+            <a href="{{contact_url}}" class="btn btn-primary btn-lg m-2 text-white" type="button">{{contact_text}}</a>
+        </div>
+    </div>
+
+    <div class="container-lg-12 rounded-3 p-2" style="background-color: {{box_color}}">
+        <div class="row g-2 justify-content-md-center">
+            {% for logo in logos %}
+                <div class="col-2">
+                    <div class="p-1 rounded-3">
+                        <img class='image-flex' src="{{logo}}" alt="logo" height=50>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
