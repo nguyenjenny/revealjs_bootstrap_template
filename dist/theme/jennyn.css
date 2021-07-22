@@ -356,5 +356,14 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   }
 }
 .reveal h1 {
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: "Ubuntu", Helvetica, sans-serif !important;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  margin: 0 !important;
+}
+
+.reveal img {
+  max-width: 100% !important;
+  max-height: 100% !important;
 }
