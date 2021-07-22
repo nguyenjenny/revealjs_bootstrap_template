@@ -23,7 +23,7 @@ color_vars = {
     'red': '#FC3E00',
     'tan': '#EDE6D4',
     'peach': '#E5CEAE',
-    "box_color": "#00537F",
+    "box_color": "#294F7C",
 }
 
 logos = glob.glob(r"assets/images/logos/logo_*.png")
