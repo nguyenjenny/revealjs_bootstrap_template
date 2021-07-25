@@ -3,15 +3,14 @@
 {% set cards = 
     [ 'Title', 'assets/images/jennyn_theme/card.png', 'Text for the card goes here'],
     [ 'Title', 'assets/images/jennyn_theme/card_2.png', 'Text for the card goes here'],
-    [ 'Title', 'assets/images/jennyn_theme/card.png', 'Text for the card goes here'],
-
+    [ 'Title', 'assets/images/jennyn_theme/card_3.png', 'Text for the card goes here'],
 %}
 
 <section data-background-color="{{peach}}">
     <div class='container'>
         <h1>Title</h1>
     </div>
-    {{ get_cards(cards, 4) }} 
+    {{ get_cards(cards, 4, 180) }} 
     {# <div class="card" style="width: 18rem;">
     <img src="assets/images/jennyn_theme/card.png" class="card-img-top" alt="'assets/images/jennyn_theme/card.png'">
     <div class="card-body">
