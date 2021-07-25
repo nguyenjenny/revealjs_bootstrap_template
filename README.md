@@ -89,14 +89,20 @@ To call a macro, you must first import it using the `{% from "FILE_PATH_HERE" im
 
     {% set items = [
         [ 'Title', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. Nullam rhoncus tempus elementum. 
-        Mauris mollis bibendum semper. Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
+        Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. 
+        Nullam rhoncus tempus elementum. 
+        Mauris mollis bibendum semper. 
+        Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
         [ 'Title', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. Nullam rhoncus tempus elementum. 
-        Mauris mollis bibendum semper. Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
+        Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. 
+        Nullam rhoncus tempus elementum. 
+        Mauris mollis bibendum semper. 
+        Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
         [ 'Title', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. Nullam rhoncus tempus elementum. 
-        Mauris mollis bibendum semper. Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
+        Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. 
+        Nullam rhoncus tempus elementum. 
+        Mauris mollis bibendum semper. 
+        Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
     ] %}
     {{ get_accordion(items, "accordian_example")}}
 
