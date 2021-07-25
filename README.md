@@ -74,6 +74,35 @@ You can update variables in the `base.py` page
         }
 ```
 
+### Using macros to quickly build bootstrap elements
+Jinja2 macros are used to make building bootstrap elements easier.
+
+![Templates demo](assets/gifs/templates_demo.gif)
+
+To call a macro, you must first import it using the `{% from "FILE_PATH_HERE" import NAME_OF_MACRO %}`. Once you have imported the macro you can then call it: `{{ NAME_OF_MACRO(parameter1, parameter2, parametern)}}`
+
+
+```
+    {% from "macros/columns_macro.html" import get_accordion %}
+
+    <section data-background-color="{{blue}}">
+
+    {% set items = [
+        [ 'Title', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. Nullam rhoncus tempus elementum. Mauris mollis bibendum semper. Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
+        [ 'Title', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. Nullam rhoncus tempus elementum. Mauris mollis bibendum semper. Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
+        [ 'Title', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum nisi non ornare blandit. Pellentesque luctus commodo arcu non rutrum. Nullam rhoncus tempus elementum. Mauris mollis bibendum semper. Sed justo ex, malesuada vitae suscipit sit amet, consectetur sit amet velit.'],
+    ] %}
+    {{ get_accordion(items, "accordian_example")}}
+
+    </section>
+```
+
+
+Macros are located in the `slides/macros` folder.
+
+
+
+
 
 ### Building the `index.html` page
 - To build the `index.html` page, run `python render.py` in the terminal
